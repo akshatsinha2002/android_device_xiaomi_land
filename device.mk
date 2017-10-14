@@ -24,3 +24,16 @@ include $(DEVICE_PATH)/product/*.mk
 
 # Inherit proprietary files
 $(call inherit-product, vendor/xiaomi/land/land-vendor.mk)
+
+# inherit from qcom-common
+include device/qcom/common/common.mk
+
+#QUAIL STAR
+I_WANT_A_QUAIL_STAR=true
+
+
+#OTA
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.ota.romname=LegendROM \
+persist.ota.version=20171014 \
+persist.ota.manifest = https://raw.githubusercontent.com/akshatsinha2002/android_extras_ota/cm-14.1/land.xml
