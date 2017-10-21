@@ -1,2 +1,2 @@
-add_lunch_combo carbon_land-user
-add_lunch_combo carbon_land-userdebug
+add_lunch_combo purefusion_land-user
+add_lunch_combo purefusion_land-userdebug
