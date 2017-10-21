@@ -1,4 +1,4 @@
-# kernel
+
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78B0000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
@@ -7,6 +7,6 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --second_offset 0x00f00000 -
 
 TARGET_KERNEL_APPEND_DTB := true
 
-TARGET_KERNEL_CONFIG := lineageos_land_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8937
+TARGET_KERNEL_CONFIG := lineageos_land_defconfig 
+TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8937 
 KERNEL_TOOLCHAIN_PREFIX :=$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
