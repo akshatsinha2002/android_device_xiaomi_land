@@ -1,10 +1,10 @@
 [
   {
-    "repository": "PolyOS-CAF/android_device_qcom_common",
+    "repository": "Poly-OS/android_device_qcom_common",
     "target_path": "device/qcom/common"
   },
   {
-    "repository": "PolyOS-CAF/android_packages_resources_devicesettings",
+    "repository": "Poly-OS/android_packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings"
   }
 ]
