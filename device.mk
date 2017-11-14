@@ -24,3 +24,6 @@ include $(DEVICE_PATH)/product/*.mk
 
 # Inherit proprietary files
 $(call inherit-product, vendor/xiaomi/land/land-vendor.mk)
+
+#QUAIL STAR
+I_WANT_A_QUAIL_STAR=true
