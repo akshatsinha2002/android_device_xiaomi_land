@@ -27,3 +27,16 @@ $(call inherit-product, vendor/xiaomi/land/land-vendor.mk)
 
 #QUAIL STAR
 I_WANT_A_QUAIL_STAR=true
+
+#OTA
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.ota.romname=Poly-Os \
+persist.ota.version=20171121 \
+persist.ota.manifest=https://raw.githubusercontent.com/Poly-OS/android_extras_ota/master/land.xml
+
+# USB
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+sys.usb.config=mtp,adb \
+persist.sys.isUsbOtgEnabled=true \
+persist.sys.usb.config=mtp,adb \
+ro.adb.secure=0
