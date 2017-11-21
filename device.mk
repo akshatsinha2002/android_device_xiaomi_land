@@ -30,7 +30,7 @@ I_WANT_A_QUAIL_STAR=true
 
 #OTA
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.ota.romname=Poly-Os \
+persist.ota.romname=PolyOS \
 persist.ota.version=20171121 \
 persist.ota.manifest=https://raw.githubusercontent.com/Poly-OS/android_extras_ota/master/land.xml
 
