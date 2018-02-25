@@ -4349,6 +4349,7 @@ int32_t QCameraParameters::setTemporalDenoise(const QCameraParameters& params)
         return NO_ERROR;
     }
 
+#ifdef TNR_CDS_SUPPORT
     const char *str = params.get(KEY_QC_TNR_MODE);
     const char *prev_str = get(KEY_QC_TNR_MODE);
     const char *video_str = params.get(KEY_QC_VIDEO_TNR_MODE);
@@ -4479,6 +4480,7 @@ int32_t QCameraParameters::setTemporalDenoise(const QCameraParameters& params)
             return BAD_VALUE;
         }
     }
+#endif
 
     return NO_ERROR;
 }
@@ -5538,6 +5540,7 @@ int32_t QCameraParameters::initDefaultParameters()
     set(KEY_SUPPORTED_SCENE_MODES, sceneModeValues);
     setSceneMode(SCENE_MODE_AUTO);
 
+#ifdef TNR_CDS_SUPPORT
     // Set CDS Mode
     String8 cdsModeValues = createValuesStringFromMap(
             CDS_MODES_MAP,
@@ -5561,6 +5564,7 @@ int32_t QCameraParameters::initDefaultParameters()
             ON_OFF_MODES_MAP,
             PARAM_MAP_SIZE(ON_OFF_MODES_MAP));
     set(KEY_QC_SUPPORTED_VIDEO_TNR_MODES, videoTnrModeValues);
+#endif
 
     // Set ISO Mode
     String8 isoValues = createValuesString(
@@ -7813,6 +7817,7 @@ int32_t QCameraParameters::setCDSMode(const QCameraParameters& params)
     const char *video_prev_str = get(KEY_QC_VIDEO_CDS_MODE);
     int32_t rc = NO_ERROR;
 
+#ifdef TNR_CDS_SUPPORT
     if (m_bRecordingHint_new == true) {
         if (video_str) {
             if ((video_prev_str == NULL) || (strcmp(video_str, video_prev_str) != 0)) {
@@ -7894,6 +7899,7 @@ int32_t QCameraParameters::setCDSMode(const QCameraParameters& params)
             }
         }
     }
+#endif
 
     return rc;
 }
