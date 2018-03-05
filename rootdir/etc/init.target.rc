@@ -124,6 +124,9 @@ on boot
 
     # enable sched boost in order to schedule tasks on perf cluster
     write /proc/sys/kernel/sched_boost 1
+    
+    # Enable hvdcp
+    setprop persist.hvdcp.allow_opti 1
 
     # Add a cpuset for the camera daemon
     # we want all cores for camera
