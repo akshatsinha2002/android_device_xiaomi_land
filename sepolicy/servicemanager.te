@@ -1,5 +1,5 @@
 #============= servicemanager ==============
-allow servicemanager init:binder transfer;
+#allow servicemanager init:binder transfer;
 allow servicemanager init:dir search;
 allow servicemanager init:file { open read };
 allow servicemanager init:process getattr;

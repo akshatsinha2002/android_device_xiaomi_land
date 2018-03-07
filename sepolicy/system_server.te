@@ -1,4 +1,4 @@
 #============= system_server ==============
-allow system_server init:binder { call transfer };
+#allow system_server init:binder { call transfer };
 allow system_server lirc_device:chr_file rw_file_perms;
 allow system_server radio_prop:property_service set;
