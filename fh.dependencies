@@ -1,0 +1,32 @@
+[
+  {
+    "repository":  "LineageOS/android_device_qcom_common",
+    "target_path": "device/qcom/common",
+    "branch":      "lineage-15.1"    
+  },
+  {
+    "repository":  "TeamReloaded/vendor_xiaomi",
+    "target_path": "vendor/xiaomi",
+    "branch":      "lineage-15.1-land"
+  },
+  {
+    "resporitory": "TeamReloaded/kernel_xiaomi_msm8937",
+    "target_path": "kernel/xiaomi/msms8937",
+    "branch":      "oreo"
+  },
+  { 
+    "resporitory": "TeamReloaded/hardware_qcom_display",
+    "target_path": "hardware/qcom/display-caf/msm8996",
+    "branch":      "oreo-mr1-8937"
+  },
+  { 
+    "resporitory": "TeamReloaded/hardware_qcom_audio",
+    "target_path": "hardware/qcom/audio-caf/msm8996",
+    "branch":      "oreo-mr1-8937"
+  },
+  {
+    "resporitory": "TeamReloaded/hardware_qcom_media",
+    "target_path": "hardware/qcom/media-caf/msm8996",
+    "branch":      "oreo-mr1-8937"
+  }
+]
