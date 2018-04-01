@@ -5,28 +5,28 @@
     "branch":      "lineage-15.1"    
   },
   {
-    "repository":  "TeamReloaded/vendor_xiaomi",
+    "repository":  "RiteshSaxena/vendor_xiaomi",
     "target_path": "vendor/xiaomi",
     "branch":      "lineage-15.1-land"
   },
   {
-    "resporitory": "TeamReloaded/kernel_xiaomi_msm8937",
+    "resporitory": "akshatsinha2002/kernel_xiaomi_msm8937",
     "target_path": "kernel/xiaomi/msms8937",
-    "branch":      "oreo"
+    "branch":      "o8.1"
   },
   { 
     "resporitory": "TeamReloaded/hardware_qcom_display",
     "target_path": "hardware/qcom/display-caf/msm8996",
-    "branch":      "oreo-mr1-8937"
+    "branch":      "lineage-15.1-caf-8996"
   },
   { 
     "resporitory": "TeamReloaded/hardware_qcom_audio",
     "target_path": "hardware/qcom/audio-caf/msm8996",
-    "branch":      "oreo-mr1-8937"
+    "branch":      "lineage-15.1-caf-8996"
   },
   {
     "resporitory": "TeamReloaded/hardware_qcom_media",
     "target_path": "hardware/qcom/media-caf/msm8996",
-    "branch":      "oreo-mr1-8937"
+    "branch":      "lineage-15.1-caf-8996"
   }
 ]
