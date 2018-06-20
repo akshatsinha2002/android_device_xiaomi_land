@@ -1,0 +1,17 @@
+[
+  {
+    "repository":  "LineageOS/android_device_qcom_common",
+    "target_path": "device/qcom/common",
+    "branch":      "lineage-15.1"    
+  },
+  {
+    "repository":  "RiteshSaxena/proprietary_vendor_xiaomi",
+    "target_path": "vendor/xiaomi",
+    "branch":      "lineage-15.1-land"
+  },
+  {
+    "repository":  "RiteshSaxena/kernel_xiaomi_msm8937",
+    "target_path": "kernel/xiaomi/msms8937",
+    "branch":      "lineage-15.1"
+  }
+]
